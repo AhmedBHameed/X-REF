@@ -1,0 +1,51 @@
+
+$carouselHeight: 600px;
+$captionImgHeight: 300px;
+
+.carousel
+{
+    .carousel-indicators{
+        text-align: left;
+    }
+    .item
+    {
+        // z-index: 99;
+        .darklayover
+        {
+            // position: absolute;
+            // top: 0px;
+            // left: 0px;
+            // background: rgba(0,0,0,0.7);
+            // width: 100%;
+            // height: 100%;
+            // z-index: 2;    
+        }
+
+        .carousel-caption
+        {
+
+            top: 0;
+            left: 11%;
+            right: 11%;
+            bottom: 0;
+            padding-top: ($carouselHeight - $captionImgHeight) / 2;
+            h1
+            {
+                margin-top: 100px;
+                padding-bottom: ($titleBottomMargin - 10px);
+            }
+
+            img
+            {
+                width: 100%;
+                margin: auto;
+                height: $captionImgHeight;
+            }
+        }
+    }
+
+    .carousel-inner
+    {
+        height: $carouselHeight;
+    }
+}
