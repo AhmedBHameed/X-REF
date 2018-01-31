@@ -7,6 +7,7 @@ const port = process.env.PORT || '5000';
 app.set('port', port);
 app.use(express.static(__dirname + '/public'));
 app.get('/[^\.]+s', function(req, res){
+	console.log('Mohammed learn git in easy way');
 	res.set('Content-Type', "text/html")
 		.sendFile(path.join(__dirname, '/public/index.html'))
 });
