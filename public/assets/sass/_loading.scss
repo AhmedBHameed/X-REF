@@ -239,12 +239,19 @@
       position: relative;
       background: black;
       color: #eaf7ff;
+      display: none;
       z-index: 999;
       width: 100%;
+  }
+  .loadingbg img {
+    transform: scale(.85);
   }
   .wrap {
     position: absolute;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
     left: 50%;
     margin-left: -80px;
     margin-top: -40px;
@@ -266,7 +273,7 @@
     text-align: right;
     text-shadow: 0 0 6px #bce4ff;
     height: 20px;
-    width: 150px;
+    width: 160px;
   }
   .loading span {
     display: block;

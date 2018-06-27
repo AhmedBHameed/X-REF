@@ -15,7 +15,7 @@ function startAnimate(){
 }
 $(win).load(function(e) {
 	// Loading complete
-	$('.loadingbg').delay(1500).fadeOut(2000, function(){
+	$('.loadingbg').show(0).delay(1500).fadeOut(2000, function(){
 		$('html, body').css("overflow-y", "auto");
 		$('.newBody').delay(500).fadeIn(2500, function(){
 			startAnimate();
